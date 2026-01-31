@@ -22,6 +22,9 @@
 .word @anim_d1_start, @anim_d1_size
 .align 4
 
+// After adding animations, go back to original headersize
+.headersize SEC_CUSTOM_HEADERSIZE
+
 .endarea
 
 /******************** Custom segment loader ********************/
