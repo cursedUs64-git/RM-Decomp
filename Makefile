@@ -33,7 +33,7 @@ HEADER_DIRS := $(shell $(MINIFIND) $(SRC_ROOT_DIR) -type f -name "*.h" | xargs -
 ifeq ($(strip $(HEADER_DIRS)),)
   HEADER_DIRS := $(SRC_ROOT_DIR)
 endif
-INCLUDE_FLAGS := -Iinclude -Iinclude/sm64 -Iinclude/sm64/libc $(foreach d,$(HEADER_DIRS),-I$(d))
+INCLUDE_FLAGS := -Iinclude/sm64 -Iinclude/sm64/include -Iinclude/sm64/include/libc -Iinclude/sm64/src $(foreach d,$(HEADER_DIRS),-I$(d))
 
 # Search C (and ASM) files to be compiled and also to sort recursive obj directories
 CUSTOM_C_SRCS := $(filter-out %.inc.c, $(shell $(MINIFIND) $(SRC_ROOT_DIR) -type f -name "*.c"))
@@ -67,8 +67,8 @@ INC_C_SRCS := $(patsubst %.png,%.inc.c,$(PNG_SRCS))
 # ----------------------------
 # Flags
 # ----------------------------
-CFLAGS := $(INCLUDE_FLAGS) -O2 -G0 -Wo,-loopunroll,0 -non_shared -Wab,-r4300_mul -Xcpluscomm -signed -32 -nostdinc -DTARGET_N64 -D_LANGUAGE_C -mips2 -w 
-ARMIPSFLAGS := -sym $(TMP_DIR)/sym.txt
+CFLAGS := $(INCLUDE_FLAGS) -O2 -G0 -Wo,-loopunroll,0 -non_shared -Wab,-r4300_mul -Xcpluscomm -signed -32 -nostdinc -DTARGET_N64 -D_LANGUAGE_C -mips2 -w
+ARMIPSFLAGS := -sym $(TMP_DIR)/sym.txt -strequ ROM_IN $(ROM_IN) -strequ ROM_OUT $(ROM_OUT)
 
 # ----------------------------
 # Phony targets

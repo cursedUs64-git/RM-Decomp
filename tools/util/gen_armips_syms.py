@@ -75,6 +75,7 @@ def add_symbol(name, address, raw_addr):
     # Check for duplicates
     for symbol in symbols:
         if symbol.name == name:
+            print(f"[dup] {name} @ {raw_addr}")
             return False  # Duplicate symbol
 
     symbols.append(Symbol(name, address, raw_addr))
@@ -88,52 +89,49 @@ def strip_asm_ext(input_str):
         return input_str[:-4]
     return input_str
 
+def batch_process_maps(root_dir, out_dir, prefix_filter=None, inject_only=False, definelabels_only=False):
+    os.makedirs(out_dir, exist_ok=True)
 
-def main():
-    prefix_filter = None
-    inject_only = False
-    definelabels_only = False
+    for root, dirs, files in os.walk(root_dir):
+        for file in files:
+            if not file.endswith(".map"):
+                continue
 
-    # Command line arguments parsing
-    argi = 1
-    while argi < len(sys.argv) and sys.argv[argi].startswith('-'):
-        if sys.argv[argi] == "-f":
-            if argi + 1 >= len(sys.argv):
-                print("Error: -f requires argument")
-                usage(sys.argv[0])
-                return 1
-            prefix_filter = sys.argv[argi + 1]
-            argi += 2
-        elif sys.argv[argi] == "--inject-only":
-            inject_only = True
-            argi += 1
-        elif sys.argv[argi] == "--definelabels-only":
-            definelabels_only = True
-            argi += 1
-        else:
-            print(f"Unknown option: {sys.argv[argi]}")
-            usage(sys.argv[0])
-            return 1
+            inmap = os.path.join(root, file)
+            rel_path = os.path.relpath(root, root_dir)
+            out_subdir = os.path.join(out_dir, rel_path)
+            os.makedirs(out_subdir, exist_ok=True)
 
-    if inject_only and definelabels_only:
-        print("Error: --inject-only and --definelabels-only are mutually exclusive")
-        usage(sys.argv[0])
-        return 1
+            base = os.path.splitext(file)[0]
+            outasm = os.path.join(out_subdir, base + ".asm")
 
-    if argi + 2 != len(sys.argv):
-        usage(sys.argv[0])
-        return 1
+            print(f"[+] {inmap} -> {outasm}")
 
-    inmap = sys.argv[argi]
-    outasm = sys.argv[argi + 1]
+            global symbols, insertion_order
+            symbols = []
+            insertion_order = []
+
+            process_single_map(inmap, outasm, prefix_filter, inject_only, definelabels_only)
+
+
+def process_single_map(inmap, outasm, prefix_filter=None, inject_only=False, definelabels_only=False):
+    global symbols, insertion_order
+    symbols = []
+    insertion_order = []
 
     try:
         with open(inmap, "r") as fin:
             outlabel = strip_asm_ext(outasm)
-            outlabel_upper = outlabel.upper()
+            outlabel_upper = os.path.basename(outlabel).upper()
+            os.makedirs(os.path.dirname(outasm), exist_ok=True)
 
             fout = None
             finject = None
+
+            if inject_only and definelabels_only:
+                print("Error: cannot use both --inject-only and --definelabels-only")
+                sys.exit(1)
+
 
             if not inject_only:
                 fout = open(outasm, "w")
@@ -141,51 +139,36 @@ def main():
                 fout.write(f".definelabel _{outlabel_upper}_ASM_, 1\n\n")
 
             if not definelabels_only:
-                inject_name = f"{strip_asm_ext(outasm)}_inject.asm"
+                inject_name = strip_asm_ext(outasm) + "_inject.asm"
                 finject = open(inject_name, "w")
                 finject.write(f".ifndef _{outlabel_upper}_INJECT_ASM_\n")
                 finject.write(f".definelabel _{outlabel_upper}_INJECT_ASM_, 1\n\n")
 
             for line in fin:
                 addr_pos = find_address(line)
-                if addr_pos is None:
+                if not addr_pos:
                     continue
-
                 addr_val = parse_address(addr_pos)
                 if addr_val is None:
                     continue
 
                 raw_addr = addr_pos
-
-                name_start = addr_pos[len(raw_addr):].lstrip()
-                if not name_start:
+                parts = line.split()
+                if len(parts) < 2:
                     continue
 
-                name_end = re.search(r'\s', name_start)
-                if name_end:
-                    name_end = name_end.start()
-                    name_start = name_start[:name_end]
-                else:
-                    name_end = len(name_start)
+                name = parts[-1]
 
-                saved = name_start[name_end:]
-                name_start = name_start[:name_end]
-
-                if not is_valid_c_identifier(name_start):
-                    name_start = saved
+                if not is_valid_c_identifier(name):
                     continue
-                if looks_like_number(name_start):
-                    name_start = saved
+                if looks_like_number(name):
                     continue
-                if prefix_filter and not name_start.startswith(prefix_filter):
-                    name_start = saved
+                if prefix_filter and not name.startswith(prefix_filter):
                     continue
 
-                if not add_symbol(name_start, addr_val, raw_addr):
-                    name_start = saved
-                    continue
+                add_symbol(name, addr_val, raw_addr)
 
-            # Writing the output files
+            # definelabels
             if fout:
                 for idx in insertion_order:
                     sym = symbols[idx]
@@ -193,29 +176,64 @@ def main():
                 fout.write("\n.endif\n")
                 fout.close()
 
+            # inject file
             if finject:
-                for idx in insertion_order:
+                for i, idx in enumerate(insertion_order):
                     curr = symbols[idx]
                     next_sym = symbols[idx + 1] if idx + 1 < len(symbols) else None
+
+                    finject.write(f"/* {curr.name} */\n")
+                    finject.write(f".org {curr.raw_addr}\n")
+
                     if next_sym:
-                        finject.write(f"/* {curr.name} */\n")
-                        finject.write(f".org {curr.raw_addr}\n")
                         finject.write(f".area {next_sym.raw_addr} - {curr.raw_addr}\n")
                         finject.write(".importobj \"\"\n")
                         finject.write(".endarea\n\n")
                     else:
-                        finject.write(f"/* {curr.name} */\n")
-                        finject.write(f".org {curr.raw_addr}\n")
-                        finject.write("/* .area ??? - {curr.raw_addr} */\n")
-                        finject.write("/* .importobj \"\" */\n")
-                        finject.write("/* .endarea */\n\n")
+                        finject.write("/* .area ??? */\n\n")
+
                 finject.write(".endif\n")
                 finject.close()
 
     except Exception as e:
-        print(f"Error: {e}")
+        print(f"Error processing {inmap}: {e}")
+
+def main():
+    prefix_filter = None
+    inject_only = False
+    definelabels_only = False
+    recursive = False
+
+    argi = 1
+    while argi < len(sys.argv) and sys.argv[argi].startswith('-'):
+        if sys.argv[argi] == "-f":
+            prefix_filter = sys.argv[argi+1]
+            argi += 2
+        elif sys.argv[argi] == "--inject-only":
+            inject_only = True
+            argi += 1
+        elif sys.argv[argi] == "--definelabels-only":
+            definelabels_only = True
+            argi += 1
+        elif sys.argv[argi] == "--recursive":
+            recursive = True
+            argi += 1
+        else:
+            usage(sys.argv[0])
+            return 1
+
+    if recursive:
+        root = sys.argv[argi] if argi < len(sys.argv) else "."
+        batch_process_maps(root, sys.argv[argi+1], prefix_filter, inject_only, definelabels_only)
+        return 0
+
+
+    # single-file mode
+    if argi + 2 != len(sys.argv):
+        usage(sys.argv[0])
         return 1
 
+    process_single_map(sys.argv[argi], sys.argv[argi+1], prefix_filter, inject_only, definelabels_only)
 
 if __name__ == "__main__":
     sys.exit(main())

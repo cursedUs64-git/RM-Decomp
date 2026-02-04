@@ -1,5 +1,5 @@
 .n64
-.open "baserom.us.z64", "patched.us.z64", 0
+.open ROM_IN, ROM_OUT, 0
 .include "asm/sections.asm"
 .include "asm/symbols.asm"
 
@@ -11,7 +11,6 @@
 // Recommended to align functions evenly (normally 4 bytes) to make it console compatible and avoid runtime errors.
 
 .importobj "obj/custom/maroo_animaso.o"
-.align 4
 
 .headersize 0-orga() // the pointers are relative to the start of the animation because the Animation struct's addressing layout is based on DMA struct
 .definelabel @anim_d1_start, orga()
@@ -23,7 +22,6 @@
 
 .definelabel mario_patchable_table_TWO, org()
 .word @anim_d1_start, @anim_d1_size
-.align 4
 
 .endarea
 

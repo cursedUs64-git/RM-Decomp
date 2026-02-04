@@ -32,7 +32,7 @@
 #include "game/save_file.h"
 #include "audio/external.h"
 #include "engine/graph_node.h"
-#include "game/game.h"
+#include "game/game_init.h"
 #include "seq_ids.h"
 #include "game/ingame_menu.h"
 #include "game/memory.h"
