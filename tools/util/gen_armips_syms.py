@@ -24,6 +24,9 @@ def trim(s):
 
 def is_valid_c_identifier(s):
     """Check if string is a valid C identifier."""
+    if s.startswith(".") or s in ("ADDR", "LOADADDR", "SIZEOF", "build", "ASSERT", "__romPos", "load", "_ftext", "_fdata", "_gp", "_edata", "__bss_start", "_fbss"):
+        return False
+
     if s is None or len(s) == 0:
         return False
     if not s[0].isalpha() and s[0] != '_':
@@ -113,6 +116,9 @@ def batch_process_maps(root_dir, out_dir, prefix_filter=None, inject_only=False,
 
             process_single_map(inmap, outasm, prefix_filter, inject_only, definelabels_only)
 
+SYM1 = re.compile(r'(0x[0-9A-Fa-f]+|\d+)\s+([A-Za-z_][A-Za-z0-9_]*)')   # addr name
+SYM2 = re.compile(r'([A-Za-z_][A-Za-z0-9_]*)\s*=\s*(0x[0-9A-Fa-f]+|\d+)') # name = addr
+
 
 def process_single_map(inmap, outasm, prefix_filter=None, inject_only=False, definelabels_only=False):
     global symbols, insertion_order
@@ -145,28 +151,29 @@ def process_single_map(inmap, outasm, prefix_filter=None, inject_only=False, def
                 finject.write(f".definelabel _{outlabel_upper}_INJECT_ASM_, 1\n\n")
 
             for line in fin:
-                addr_pos = find_address(line)
-                if not addr_pos:
+                name = None
+                addr_pos = None
+
+                m = SYM1.search(line)
+                if m:
+                    addr_pos, name = m.group(1), m.group(2)
+                else:
+                    m = SYM2.search(line)
+                    if m:
+                        name, addr_pos = m.group(1), m.group(2)
+
+                if not name or not addr_pos:
                     continue
                 addr_val = parse_address(addr_pos)
                 if addr_val is None:
                     continue
 
-                raw_addr = addr_pos
-                parts = line.split()
-                if len(parts) < 2:
-                    continue
-
-                name = parts[-1]
-
                 if not is_valid_c_identifier(name):
-                    continue
-                if looks_like_number(name):
                     continue
                 if prefix_filter and not name.startswith(prefix_filter):
                     continue
 
-                add_symbol(name, addr_val, raw_addr)
+                add_symbol(name, addr_val, addr_pos)
 
             # definelabels
             if fout:
@@ -186,7 +193,7 @@ def process_single_map(inmap, outasm, prefix_filter=None, inject_only=False, def
                     finject.write(f".org {curr.raw_addr}\n")
 
                     if next_sym:
-                        finject.write(f".area {next_sym.raw_addr} - {curr.raw_addr}\n")
+                        finject.write(f".area {next_sym.raw_addr} - {curr.raw_addr}, 0\n")
                         finject.write(".importobj \"\"\n")
                         finject.write(".endarea\n\n")
                     else:

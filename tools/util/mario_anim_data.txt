@@ -1,0 +1,595 @@
+anim_00                   Animation               0x14       0x4EC690  
+anim_00                   u16          indices    0xFC       0x4EC6A8  
+anim_00                   s16          values     0xA2C      0x4EC7A4  
+anim_01                   Animation               0x14       0x4ED1D0  
+anim_02                   Animation               0x14       0x4ED1E8  
+anim_01_02                u16          indices    0xFC       0x4ED200  
+anim_01_02                s16          values     0x19B0     0x4ED2FC  
+anim_03                   Animation               0x14       0x4EECAC  
+anim_03                   u16          indices    0xFC       0x4EECC4  
+anim_03                   s16          values     0x1114     0x4EEDC0  
+anim_04                   Animation               0x14       0x4EFED4  
+anim_04                   u16          indices    0xFC       0x4EFEEC  
+anim_04                   s16          values     0x8D8      0x4EFFE8  
+anim_05                   Animation               0x14       0x4F08C0  
+anim_05                   u16          indices    0xFC       0x4F08D8  
+anim_05                   s16          values     0x16A4     0x4F09D4  
+anim_06                   Animation               0x14       0x4F2078  
+anim_06                   u16          indices    0xFC       0x4F2090  
+anim_06                   s16          values     0x37C      0x4F218C  
+anim_07                   Animation               0x14       0x4F2508  
+anim_08                   Animation               0x14       0x4F2520  
+anim_07_08                u16          indices    0xFC       0x4F2538  
+anim_07_08                s16          values     0x5BC      0x4F2634  
+anim_09                   Animation               0x14       0x4F2BF0  
+anim_09                   u16          indices    0xFC       0x4F2C08  
+anim_09                   s16          values     0xBEC      0x4F2D04  
+anim_0A                   Animation               0x14       0x4F38F0  
+anim_0A                   u16          indices    0xFC       0x4F3908  
+anim_0A                   s16          values     0x9F0      0x4F3A04  
+anim_0B                   Animation               0x14       0x4F43F4  
+anim_0C                   Animation               0x14       0x4F440C  
+anim_0B_0C                u16          indices    0xFC       0x4F4424  
+anim_0B_0C                s16          values     0x544      0x4F4520  
+anim_0D                   Animation               0x14       0x4F4A64  
+anim_0D                   u16          indices    0xFC       0x4F4A7C  
+anim_0D                   s16          values     0x302      0x4F4B78  
+anim_0E                   Animation               0x14       0x4F4E7C  
+anim_0E                   u16          indices    0xFC       0x4F4E94  
+anim_0E                   s16          values     0x50       0x4F4F90  
+anim_0F                   Animation               0x14       0x4F4FE0  
+anim_10                   Animation               0x14       0x4F4FF8  
+anim_0F_10                u16          indices    0xFC       0x4F5010  
+anim_0F_10                s16          values     0x5DE      0x4F510C  
+anim_11                   Animation               0x14       0x4F56EC  
+anim_11                   u16          indices    0xFC       0x4F5704  
+anim_11                   s16          values     0x496      0x4F5800  
+anim_12                   Animation               0x14       0x4F5C98  
+anim_12                   u16          indices    0xFC       0x4F5CB0  
+anim_12                   s16          values     0x526      0x4F5DAC  
+anim_13                   Animation               0x14       0x4F62D4  
+anim_13                   u16          indices    0xFC       0x4F62EC  
+anim_13                   s16          values     0x68E      0x4F63E8  
+anim_14                   Animation               0x14       0x4F6A78  
+anim_14                   u16          indices    0xFC       0x4F6A90  
+anim_14                   s16          values     0x44E      0x4F6B8C  
+anim_15                   Animation               0x14       0x4F6FDC  
+anim_15                   u16          indices    0xFC       0x4F6FF4  
+anim_15                   s16          values     0x3A2      0x4F70F0  
+anim_16                   Animation               0x14       0x4F7494  
+anim_16                   u16          indices    0xFC       0x4F74AC  
+anim_16                   s16          values     0x1164     0x4F75A8  
+anim_17                   Animation               0x14       0x4F870C  
+anim_17                   u16          indices    0xFC       0x4F8724  
+anim_17                   s16          values     0xB7E      0x4F8820  
+anim_18                   Animation               0x14       0x4F93A0  
+anim_18                   u16          indices    0xFC       0x4F93B8  
+anim_18                   s16          values     0x1164     0x4F94B4  
+anim_19                   Animation               0x14       0x4FA618  
+anim_19                   u16          indices    0xFC       0x4FA630  
+anim_19                   s16          values     0x14EA     0x4FA72C  
+anim_1A                   Animation               0x14       0x4FBC18  
+anim_1A                   u16          indices    0xFC       0x4FBC30  
+anim_1A                   s16          values     0x47A      0x4FBD2C  
+anim_1B                   Animation               0x14       0x4FC1A8  
+anim_1B                   u16          indices    0xFC       0x4FC1C0  
+anim_1B                   s16          values     0xB2A      0x4FC2BC  
+anim_1C                   Animation               0x14       0x4FCDE8  
+anim_1C                   u16          indices    0xFC       0x4FCE00  
+anim_1C                   s16          values     0x30C      0x4FCEFC  
+anim_1D                   Animation               0x14       0x4FD208  
+anim_1D                   u16          indices    0xFC       0x4FD220  
+anim_1D                   s16          values     0x564      0x4FD31C  
+anim_1E                   Animation               0x14       0x4FD880  
+anim_1E                   u16          indices    0xFC       0x4FD898  
+anim_1E                   s16          values     0x5FA      0x4FD994  
+anim_1F                   Animation               0x14       0x4FDF90  
+anim_1F                   u16          indices    0xFC       0x4FDFA8  
+anim_1F                   s16          values     0x34E      0x4FE0A4  
+anim_20                   Animation               0x14       0x4FE3F4  
+anim_20                   u16          indices    0xFC       0x4FE40C  
+anim_20                   s16          values     0x1BD4     0x4FE508  
+anim_21                   Animation               0x14       0x5000DC  
+anim_21                   u16          indices    0xFC       0x5000F4  
+anim_21                   s16          values     0xA32      0x5001F0  
+anim_22                   Animation               0x14       0x500C24  
+anim_22                   u16          indices    0xFC       0x500C3C  
+anim_22                   s16          values     0x6D6      0x500D38  
+anim_23                   Animation               0x14       0x501410  
+anim_23                   u16          indices    0xFC       0x501428  
+anim_23                   s16          values     0x2018     0x501524  
+anim_24                   Animation               0x14       0x50353C  
+anim_24                   u16          indices    0xFC       0x503554  
+anim_24                   s16          values     0x24A0     0x503650  
+anim_25                   Animation               0x14       0x505AF0  
+anim_25                   u16          indices    0xFC       0x505B08  
+anim_25                   s16          values     0x1F52     0x505C04  
+anim_26                   Animation               0x14       0x507B58  
+anim_26                   u16          indices    0xFC       0x507B70  
+anim_26                   s16          values     0x1CB8     0x507C6C  
+anim_27                   Animation               0x14       0x509924  
+anim_27                   u16          indices    0xFC       0x50993C  
+anim_27                   s16          values     0x2314     0x509A38  
+anim_28                   Animation               0x14       0x50BD4C  
+anim_28                   u16          indices    0xFC       0x50BD64  
+anim_28                   s16          values     0x3F2      0x50BE60  
+anim_29                   Animation               0x14       0x50C254  
+anim_29                   u16          indices    0xFC       0x50C26C  
+anim_29                   s16          values     0x246      0x50C368  
+anim_2A                   Animation               0x14       0x50C5B0  
+anim_2A                   u16          indices    0xFC       0x50C5C8  
+anim_2A                   s16          values     0x4E4      0x50C6C4  
+anim_2B                   Animation               0x14       0x50CBA8  
+anim_2B                   u16          indices    0xFC       0x50CBC0  
+anim_2B                   s16          values     0x62E      0x50CCBC  
+anim_2C                   Animation               0x14       0x50D2EC  
+anim_2D                   Animation               0x14       0x50D304  
+anim_2C_2D                u16          indices    0xFC       0x50D31C  
+anim_2C_2D                s16          values     0x15F4     0x50D418  
+anim_2E                   Animation               0x14       0x50EA0C  
+anim_2E                   u16          indices    0xFC       0x50EA24  
+anim_2E                   s16          values     0xBD4      0x50EB20  
+anim_2F                   Animation               0x14       0x50F6F4  
+anim_2F                   u16          indices    0xFC       0x50F70C  
+anim_2F                   s16          values     0x1CFC     0x50F808  
+anim_30                   Animation               0x14       0x511504  
+anim_30                   u16          indices    0xFC       0x51151C  
+anim_30                   s16          values     0x1534     0x511618  
+anim_31                   Animation               0x14       0x512B4C  
+anim_31                   u16          indices    0xFC       0x512B64  
+anim_31                   s16          values     0x29A4     0x512C60  
+anim_32                   Animation               0x14       0x515604  
+anim_32                   u16          indices    0xFC       0x51561C  
+anim_32                   s16          values     0x1ED2     0x515718  
+anim_33                   Animation               0x14       0x5175EC  
+anim_33                   u16          indices    0xFC       0x517604  
+anim_33                   s16          values     0xB18      0x517700  
+anim_34                   Animation               0x14       0x518218  
+anim_34                   u16          indices    0xFC       0x518230  
+anim_34                   s16          values     0x514      0x51832C  
+anim_35                   Animation               0x14       0x518840  
+anim_35                   u16          indices    0xFC       0x518858  
+anim_35                   s16          values     0xE78      0x518954  
+anim_36                   Animation               0x14       0x5197CC  
+anim_36                   u16          indices    0xFC       0x5197E4  
+anim_36                   s16          values     0xE74      0x5198E0  
+anim_37                   Animation               0x14       0x51A754  
+anim_37                   u16          indices    0xFC       0x51A76C  
+anim_37                   s16          values     0x1AAC     0x51A868  
+anim_38                   Animation               0x14       0x51C314  
+anim_38                   u16          indices    0xFC       0x51C32C  
+anim_38                   s16          values     0x34C      0x51C428  
+anim_39                   Animation               0x14       0x51C774  
+anim_39                   u16          indices    0xFC       0x51C78C  
+anim_39                   s16          values     0x3082     0x51C888  
+anim_3A                   Animation               0x14       0x51F90C  
+anim_3A                   u16          indices    0xFC       0x51F924  
+anim_3A                   s16          values     0x176      0x51FA20  
+anim_3B                   Animation               0x14       0x51FB98  
+anim_3B                   u16          indices    0xFC       0x51FBB0  
+anim_3B                   s16          values     0x4B4      0x51FCAC  
+anim_3C                   Animation               0x14       0x520160  
+anim_3D                   Animation               0x14       0x520178  
+anim_3C_3D                u16          indices    0xFC       0x520190  
+anim_3C_3D                s16          values     0x306      0x52028C  
+anim_3E                   Animation               0x14       0x520594  
+anim_3E                   u16          indices    0xFC       0x5205AC  
+anim_3E                   s16          values     0x2CE2     0x5206A8  
+anim_3F                   Animation               0x14       0x52338C  
+anim_3F                   u16          indices    0xFC       0x5233A4  
+anim_3F                   s16          values     0xC16      0x5234A0  
+anim_40                   Animation               0x14       0x5240B8  
+anim_40                   u16          indices    0xFC       0x5240D0  
+anim_40                   s16          values     0x446      0x5241CC  
+anim_41                   Animation               0x14       0x524614  
+anim_41                   u16          indices    0xFC       0x52462C  
+anim_41                   s16          values     0x218      0x524728  
+anim_42                   Animation               0x14       0x524940  
+anim_42                   u16          indices    0xFC       0x524958  
+anim_42                   s16          values     0x3BC      0x524A54  
+anim_43                   Animation               0x14       0x524E10  
+anim_43                   u16          indices    0xFC       0x524E28  
+anim_43                   s16          values     0x54       0x524F24  
+anim_44                   Animation               0x14       0x524F78  
+anim_44                   u16          indices    0xFC       0x524F90  
+anim_44                   s16          values     0x28A      0x52508C  
+anim_45                   Animation               0x14       0x525318  
+anim_46                   Animation               0x14       0x525330  
+anim_45_46                u16          indices    0xFC       0x525348  
+anim_45_46                s16          values     0x4A6      0x525444  
+anim_47                   Animation               0x14       0x5258EC  
+anim_47                   u16          indices    0xFC       0x525904  
+anim_47                   s16          values     0x346      0x525A00  
+anim_48                   Animation               0x14       0x525D48  
+anim_48                   u16          indices    0xFC       0x525D60  
+anim_48                   s16          values     0x13EA     0x525E5C  
+anim_49                   Animation               0x14       0x527248  
+anim_49                   u16          indices    0xFC       0x527260  
+anim_49                   s16          values     0x512      0x52735C  
+anim_4A                   Animation               0x14       0x527870  
+anim_4A                   u16          indices    0xFC       0x527888  
+anim_4A                   s16          values     0x268      0x527984  
+anim_4B                   Animation               0x14       0x527BEC  
+anim_4B                   u16          indices    0xFC       0x527C04  
+anim_4B                   s16          values     0x56A      0x527D00  
+anim_4C                   Animation               0x14       0x52826C  
+anim_4C                   u16          indices    0xFC       0x528284  
+anim_4C                   s16          values     0x29E      0x528380  
+anim_4D                   Animation               0x14       0x528620  
+anim_4E                   Animation               0x14       0x528638  
+anim_4D_4E                u16          indices    0xFC       0x528650  
+anim_4D_4E                s16          values     0x998      0x52874C  
+anim_4F                   Animation               0x14       0x5290E4  
+anim_4F                   u16          indices    0xFC       0x5290FC  
+anim_4F                   s16          values     0x62A      0x5291F8  
+anim_50                   Animation               0x14       0x529824  
+anim_50                   u16          indices    0xFC       0x52983C  
+anim_50                   s16          values     0x1A4      0x529938  
+anim_51                   Animation               0x14       0x529ADC  
+anim_51                   u16          indices    0xFC       0x529AF4  
+anim_51                   s16          values     0x3EA      0x529BF0  
+anim_52                   Animation               0x14       0x529FDC  
+anim_52                   u16          indices    0xFC       0x529FF4  
+anim_52                   s16          values     0x36E      0x52A0F0  
+anim_53                   Animation               0x14       0x52A460  
+anim_53                   u16          indices    0xFC       0x52A478  
+anim_53                   s16          values     0x7B2      0x52A574  
+anim_54                   Animation               0x14       0x52AD28  
+anim_54                   u16          indices    0xFC       0x52AD40  
+anim_54                   s16          values     0x522      0x52AE3C  
+anim_55                   Animation               0x14       0x52B360  
+anim_55                   u16          indices    0xFC       0x52B378  
+anim_55                   s16          values     0x2C04     0x52B474  
+anim_56                   Animation               0x14       0x52E078  
+anim_57                   Animation               0x14       0x52E090  
+anim_56_57                u16          indices    0xFC       0x52E0A8  
+anim_56_57                s16          values     0x618      0x52E1A4  
+anim_58                   Animation               0x14       0x52E7BC  
+anim_58                   u16          indices    0xFC       0x52E7D4  
+anim_58                   s16          values     0x43A      0x52E8D0  
+anim_59                   Animation               0x14       0x52ED0C  
+anim_59                   u16          indices    0xFC       0x52ED24  
+anim_59                   s16          values     0xBEC      0x52EE20  
+anim_5A                   Animation               0x14       0x52FA0C  
+anim_5A                   u16          indices    0xFC       0x52FA24  
+anim_5A                   s16          values     0xCCE      0x52FB20  
+anim_5B                   Animation               0x14       0x5307F0  
+anim_5B                   u16          indices    0xFC       0x530808  
+anim_5B                   s16          values     0x2D0      0x530904  
+anim_5C                   Animation               0x14       0x530BD4  
+anim_5C                   u16          indices    0xFC       0x530BEC  
+anim_5C                   s16          values     0x4EA      0x530CE8  
+anim_5D                   Animation               0x14       0x5311D4  
+anim_5D                   u16          indices    0xFC       0x5311EC  
+anim_5D                   s16          values     0x476      0x5312E8  
+anim_5E                   Animation               0x14       0x531760  
+anim_5E                   u16          indices    0xFC       0x531778  
+anim_5E                   s16          values     0x2F4E     0x531874  
+anim_5F                   Animation               0x14       0x5347C4  
+anim_5F                   u16          indices    0xFC       0x5347DC  
+anim_5F                   s16          values     0x13C2     0x5348D8  
+anim_60                   Animation               0x14       0x535C9C  
+anim_60                   u16          indices    0xFC       0x535CB4  
+anim_60                   s16          values     0xFB4      0x535DB0  
+anim_61                   Animation               0x14       0x536D64  
+anim_61                   u16          indices    0xFC       0x536D7C  
+anim_61                   s16          values     0x3174     0x536E78  
+anim_62                   Animation               0x14       0x539FEC  
+anim_62                   u16          indices    0xFC       0x53A004  
+anim_62                   s16          values     0x2E6      0x53A100  
+anim_63                   Animation               0x14       0x53A3E8  
+anim_63                   u16          indices    0xFC       0x53A400  
+anim_63                   s16          values     0x65A      0x53A4FC  
+anim_64                   Animation               0x14       0x53AB58  
+anim_64                   u16          indices    0xFC       0x53AB70  
+anim_64                   s16          values     0x4DE      0x53AC6C  
+anim_65                   Animation               0x14       0x53B14C  
+anim_65                   u16          indices    0xFC       0x53B164  
+anim_65                   s16          values     0x6A4      0x53B260  
+anim_66                   Animation               0x14       0x53B904  
+anim_66                   u16          indices    0xFC       0x53B91C  
+anim_66                   s16          values     0x79C      0x53BA18  
+anim_67                   Animation               0x14       0x53C1B4  
+anim_67                   u16          indices    0xFC       0x53C1CC  
+anim_67                   s16          values     0x182      0x53C2C8  
+anim_68                   Animation               0x14       0x53C44C  
+anim_68                   u16          indices    0xFC       0x53C464  
+anim_68                   s16          values     0x154      0x53C560  
+anim_69                   Animation               0x14       0x53C6B4  
+anim_69                   u16          indices    0xFC       0x53C6CC  
+anim_69                   s16          values     0x2FC      0x53C7C8  
+anim_6A                   Animation               0x14       0x53CAC4  
+anim_6A                   u16          indices    0xFC       0x53CADC  
+anim_6A                   s16          values     0x424      0x53CBD8  
+anim_6B                   Animation               0x14       0x53CFFC  
+anim_6B                   u16          indices    0xFC       0x53D014  
+anim_6B                   s16          values     0x3AC      0x53D110  
+anim_6C                   Animation               0x14       0x53D4BC  
+anim_6C                   u16          indices    0xFC       0x53D4D4  
+anim_6C                   s16          values     0x504      0x53D5D0  
+anim_6D                   Animation               0x14       0x53DAD4  
+anim_6D                   u16          indices    0xFC       0x53DAEC  
+anim_6D                   s16          values     0x506      0x53DBE8  
+anim_6E                   Animation               0x14       0x53E0F0  
+anim_6E                   u16          indices    0xFC       0x53E108  
+anim_6E                   s16          values     0x470      0x53E204  
+anim_6F                   Animation               0x14       0x53E674  
+anim_70                   Animation               0x14       0x53E68C  
+anim_6F_70                u16          indices    0xFC       0x53E6A4  
+anim_6F_70                s16          values     0x62       0x53E7A0  
+anim_71                   Animation               0x14       0x53E804  
+anim_71                   u16          indices    0xFC       0x53E81C  
+anim_71                   s16          values     0x81E      0x53E918  
+anim_72                   Animation               0x14       0x53F138  
+anim_73                   Animation               0x14       0x53F150  
+anim_72_73                u16          indices    0xFC       0x53F168  
+anim_72_73                s16          values     0x10F6     0x53F264  
+anim_74                   Animation               0x14       0x54035C  
+anim_74                   u16          indices    0xFC       0x540374  
+anim_74                   s16          values     0x734      0x540470  
+anim_75                   Animation               0x14       0x540BA4  
+anim_75                   u16          indices    0xFC       0x540BBC  
+anim_75                   s16          values     0x764      0x540CB8  
+anim_76                   Animation               0x14       0x54141C  
+anim_76                   u16          indices    0xFC       0x541434  
+anim_76                   s16          values     0x1228     0x541530  
+anim_77                   Animation               0x14       0x542758  
+anim_77                   u16          indices    0xFC       0x542770  
+anim_77                   s16          values     0x9A0      0x54286C  
+anim_78                   Animation               0x14       0x54320C  
+anim_78                   u16          indices    0xFC       0x543224  
+anim_78                   s16          values     0x28D6     0x543320  
+anim_79                   Animation               0x14       0x545BF8  
+anim_79                   u16          indices    0xFC       0x545C10  
+anim_79                   s16          values     0xE32      0x545D0C  
+anim_7A                   Animation               0x14       0x546B40  
+anim_7A                   u16          indices    0xFC       0x546B58  
+anim_7A                   s16          values     0x192      0x546C54  
+anim_7B                   Animation               0x14       0x546DE8  
+anim_7B                   u16          indices    0xFC       0x546E00  
+anim_7B                   s16          values     0x938      0x546EFC  
+anim_7C                   Animation               0x14       0x547834  
+anim_7C                   u16          indices    0xFC       0x54784C  
+anim_7C                   s16          values     0x8FC      0x547948  
+anim_7D                   Animation               0x14       0x548244  
+anim_7D                   u16          indices    0xFC       0x54825C  
+anim_7D                   s16          values     0x45A      0x548358  
+anim_7E                   Animation               0x14       0x5487B4  
+anim_7E                   u16          indices    0xFC       0x5487CC  
+anim_7E                   s16          values     0x11BA     0x5488C8  
+anim_7F                   Animation               0x14       0x549A84  
+anim_7F                   u16          indices    0xFC       0x549A9C  
+anim_7F                   s16          values     0xE26      0x549B98  
+anim_80                   Animation               0x14       0x54A9C0  
+anim_80                   u16          indices    0xFC       0x54A9D8  
+anim_80                   s16          values     0x1098     0x54AAD4  
+anim_81                   Animation               0x14       0x54BB6C  
+anim_81                   u16          indices    0xFC       0x54BB84  
+anim_81                   s16          values     0x10D4     0x54BC80  
+anim_82                   Animation               0x14       0x54CD54  
+anim_82                   u16          indices    0xFC       0x54CD6C  
+anim_82                   s16          values     0x168A     0x54CE68  
+anim_83                   Animation               0x14       0x54E4F4  
+anim_83                   u16          indices    0xFC       0x54E50C  
+anim_83                   s16          values     0x127E     0x54E608  
+anim_84                   Animation               0x14       0x54F888  
+anim_84                   u16          indices    0xFC       0x54F8A0  
+anim_84                   s16          values     0x1294     0x54F99C  
+anim_85                   Animation               0x14       0x550C30  
+anim_85                   u16          indices    0xFC       0x550C48  
+anim_85                   s16          values     0x144      0x550D44  
+anim_86                   Animation               0x14       0x550E88  
+anim_86                   u16          indices    0xFC       0x550EA0  
+anim_86                   s16          values     0xB56      0x550F9C  
+anim_87                   Animation               0x14       0x551AF4  
+anim_87                   u16          indices    0xFC       0x551B0C  
+anim_87                   s16          values     0x61C      0x551C08  
+anim_88                   Animation               0x14       0x552224  
+anim_89                   Animation               0x14       0x55223C  
+anim_88_89                u16          indices    0xFC       0x552254  
+anim_88_89                s16          values     0x4EC      0x552350  
+anim_8A                   Animation               0x14       0x55283C  
+anim_8A                   u16          indices    0xFC       0x552854  
+anim_8A                   s16          values     0xBA4      0x552950  
+anim_8B                   Animation               0x14       0x5534F4  
+anim_8B                   u16          indices    0xFC       0x55350C  
+anim_8B                   s16          values     0xB9A      0x553608  
+anim_8C                   Animation               0x14       0x5541A4  
+anim_8C                   u16          indices    0xFC       0x5541BC  
+anim_8C                   s16          values     0x286      0x5542B8  
+anim_8D                   Animation               0x14       0x554540  
+anim_8D                   u16          indices    0xFC       0x554558  
+anim_8D                   s16          values     0x43E      0x554654  
+anim_8E                   Animation               0x14       0x554A94  
+anim_8F                   Animation               0x14       0x554AAC  
+anim_8E_8F                u16          indices    0xFC       0x554AC4  
+anim_8E_8F                s16          values     0x652      0x554BC0  
+anim_90                   Animation               0x14       0x555214  
+anim_90                   u16          indices    0xFC       0x55522C  
+anim_90                   s16          values     0x3F4      0x555328  
+anim_91                   Animation               0x14       0x55571C  
+anim_91                   u16          indices    0xFC       0x555734  
+anim_91                   s16          values     0x10A      0x555830  
+anim_92                   Animation               0x14       0x55593C  
+anim_92                   u16          indices    0xFC       0x555954  
+anim_92                   s16          values     0x15E0     0x555A50  
+anim_93                   Animation               0x14       0x557030  
+anim_93                   u16          indices    0xFC       0x557048  
+anim_93                   s16          values     0x25A      0x557144  
+anim_94                   Animation               0x14       0x5573A0  
+anim_94                   u16          indices    0xFC       0x5573B8  
+anim_94                   s16          values     0x50       0x5574B4  
+anim_95                   Animation               0x14       0x557504  
+anim_95                   u16          indices    0xFC       0x55751C  
+anim_95                   s16          values     0x118      0x557618  
+anim_96                   Animation               0x14       0x557730  
+anim_96                   u16          indices    0xFC       0x557748  
+anim_96                   s16          values     0x2A8      0x557844  
+anim_97                   Animation               0x14       0x557AEC  
+anim_97                   u16          indices    0xFC       0x557B04  
+anim_97                   s16          values     0x1A0      0x557C00  
+anim_98                   Animation               0x14       0x557DA0  
+anim_98                   u16          indices    0xFC       0x557DB8  
+anim_98                   s16          values     0xAC6      0x557EB4  
+anim_99                   Animation               0x14       0x55897C  
+anim_99                   u16          indices    0xFC       0x558994  
+anim_99                   s16          values     0x1B66     0x558A90  
+anim_9A                   Animation               0x14       0x55A5F8  
+anim_9A                   u16          indices    0xFC       0x55A610  
+anim_9A                   s16          values     0x284      0x55A70C  
+anim_9B                   Animation               0x14       0x55A990  
+anim_9B                   u16          indices    0xFC       0x55A9A8  
+anim_9B                   s16          values     0x276      0x55AAA4  
+anim_9C                   Animation               0x14       0x55AD1C  
+anim_9C                   u16          indices    0xFC       0x55AD34  
+anim_9C                   s16          values     0x1314     0x55AE30  
+anim_9D                   Animation               0x14       0x55C144  
+anim_9D                   u16          indices    0xFC       0x55C15C  
+anim_9D                   s16          values     0x798      0x55C258  
+anim_9E                   Animation               0x14       0x55C9F0  
+anim_9E                   u16          indices    0xFC       0x55CA08  
+anim_9E                   s16          values     0xFA8      0x55CB04  
+anim_9F                   Animation               0x14       0x55DAAC  
+anim_9F                   u16          indices    0xFC       0x55DAC4  
+anim_9F                   s16          values     0x306      0x55DBC0  
+anim_A0                   Animation               0x14       0x55DEC8  
+anim_A0                   u16          indices    0xFC       0x55DEE0  
+anim_A0                   s16          values     0x186      0x55DFDC  
+anim_A1                   Animation               0x14       0x55E164  
+anim_A1                   u16          indices    0xFC       0x55E17C  
+anim_A1                   s16          values     0x398      0x55E278  
+anim_A2                   Animation               0x14       0x55E610  
+anim_A2                   u16          indices    0xFC       0x55E628  
+anim_A2                   s16          values     0x5A8      0x55E724  
+anim_A3                   Animation               0x14       0x55ECCC  
+anim_A3                   u16          indices    0xFC       0x55ECE4  
+anim_A3                   s16          values     0xA1E      0x55EDE0  
+anim_A4                   Animation               0x14       0x55F800  
+anim_A4                   u16          indices    0xFC       0x55F818  
+anim_A4                   s16          values     0x672      0x55F914  
+anim_A5                   Animation               0x14       0x55FF88  
+anim_A5                   u16          indices    0xFC       0x55FFA0  
+anim_A5                   s16          values     0x141C     0x56009C  
+anim_A6                   Animation               0x14       0x5614B8  
+anim_A6                   u16          indices    0xFC       0x5614D0  
+anim_A6                   s16          values     0x1226     0x5615CC  
+anim_A7                   Animation               0x14       0x5627F4  
+anim_A7                   u16          indices    0xFC       0x56280C  
+anim_A7                   s16          values     0xBF4      0x562908  
+anim_A8                   Animation               0x14       0x5634FC  
+anim_A8                   u16          indices    0xFC       0x563514  
+anim_A8                   s16          values     0xF46      0x563610  
+anim_A9                   Animation               0x14       0x564558  
+anim_A9                   u16          indices    0xFC       0x564570  
+anim_A9                   s16          values     0x6C0      0x56466C  
+anim_AA                   Animation               0x14       0x564D2C  
+anim_AA                   u16          indices    0xFC       0x564D44  
+anim_AA                   s16          values     0x3CC      0x564E40  
+anim_AB                   Animation               0x14       0x56520C  
+anim_AB                   u16          indices    0xFC       0x565224  
+anim_AB                   s16          values     0x2EE      0x565320  
+anim_AC                   Animation               0x14       0x565610  
+anim_AC                   u16          indices    0xFC       0x565628  
+anim_AC                   s16          values     0x6AA      0x565724  
+anim_AD                   Animation               0x14       0x565DD0  
+anim_AD                   u16          indices    0xFC       0x565DE8  
+anim_AD                   s16          values     0x744      0x565EE4  
+anim_AE                   Animation               0x14       0x566628  
+anim_AE                   u16          indices    0xFC       0x566640  
+anim_AE                   s16          values     0x3BC      0x56673C  
+anim_AF                   Animation               0x14       0x566AF8  
+anim_AF                   u16          indices    0xFC       0x566B10  
+anim_AF                   s16          values     0x870      0x566C0C  
+anim_B0                   Animation               0x14       0x56747C  
+anim_B0                   u16          indices    0xFC       0x567494  
+anim_B0                   s16          values     0x1B8      0x567590  
+anim_B1                   Animation               0x14       0x567748  
+anim_B1                   u16          indices    0xFC       0x567760  
+anim_B1                   s16          values     0x972      0x56785C  
+anim_B2                   Animation               0x14       0x5681D0  
+anim_B2                   u16          indices    0xFC       0x5681E8  
+anim_B2                   s16          values     0x720      0x5682E4  
+anim_B3                   Animation               0x14       0x568A04  
+anim_B3                   u16          indices    0xFC       0x568A1C  
+anim_B3                   s16          values     0x195E     0x568B18  
+anim_B4                   Animation               0x14       0x56A478  
+anim_B4                   u16          indices    0xFC       0x56A490  
+anim_B4                   s16          values     0x736      0x56A58C  
+anim_B5                   Animation               0x14       0x56ACC4  
+anim_B6                   Animation               0x14       0x56ACDC  
+anim_B5_B6                u16          indices    0xFC       0x56ACF4  
+anim_B5_B6                s16          values     0x566      0x56ADF0  
+anim_B7                   Animation               0x14       0x56B358  
+anim_B7                   u16          indices    0xFC       0x56B370  
+anim_B7                   s16          values     0xBA4      0x56B46C  
+anim_B8                   Animation               0x14       0x56C010  
+anim_B8                   u16          indices    0xFC       0x56C028  
+anim_B8                   s16          values     0x308      0x56C124  
+anim_B9                   Animation               0x14       0x56C42C  
+anim_B9                   u16          indices    0xFC       0x56C444  
+anim_B9                   s16          values     0x814      0x56C540  
+anim_BA                   Animation               0x14       0x56CD54  
+anim_BA                   u16          indices    0xFC       0x56CD6C  
+anim_BA                   s16          values     0x3DA      0x56CE68  
+anim_BB                   Animation               0x14       0x56D244  
+anim_BB                   u16          indices    0xFC       0x56D25C  
+anim_BB                   s16          values     0x1024     0x56D358  
+anim_BC                   Animation               0x14       0x56E37C  
+anim_BD                   Animation               0x14       0x56E394  
+anim_BC_BD                u16          indices    0xFC       0x56E3AC  
+anim_BC_BD                s16          values     0x5F8      0x56E4A8  
+anim_BE                   Animation               0x14       0x56EAA0  
+anim_BE                   u16          indices    0xFC       0x56EAB8  
+anim_BE                   s16          values     0x2F8      0x56EBB4  
+anim_BF                   Animation               0x14       0x56EEAC  
+anim_BF                   u16          indices    0xFC       0x56EEC4  
+anim_BF                   s16          values     0x790      0x56EFC0  
+anim_C0                   Animation               0x14       0x56F750  
+anim_C0                   u16          indices    0xFC       0x56F768  
+anim_C0                   s16          values     0x994      0x56F864  
+anim_C1                   Animation               0x14       0x5701F8  
+anim_C1                   u16          indices    0xFC       0x570210  
+anim_C1                   s16          values     0x9A4      0x57030C  
+anim_C2                   Animation               0x14       0x570CB0  
+anim_C2                   u16          indices    0xFC       0x570CC8  
+anim_C2                   s16          values     0x152E     0x570DC4  
+anim_C3                   Animation               0x14       0x5722F4  
+anim_C3                   u16          indices    0xFC       0x57230C  
+anim_C3                   s16          values     0x796      0x572408  
+anim_C4                   Animation               0x14       0x572BA0  
+anim_C4                   u16          indices    0xFC       0x572BB8  
+anim_C4                   s16          values     0x796      0x572CB4  
+anim_C5                   Animation               0x14       0x57344C  
+anim_C5                   u16          indices    0xFC       0x573464  
+anim_C5                   s16          values     0x796      0x573560  
+anim_C6                   Animation               0x14       0x573CF8  
+anim_C6                   u16          indices    0xFC       0x573D10  
+anim_C6                   s16          values     0x682      0x573E0C  
+anim_C7                   Animation               0x14       0x574490  
+anim_C7                   u16          indices    0xFC       0x5744A8  
+anim_C7                   s16          values     0xB1C      0x5745A4  
+anim_C8                   Animation               0x14       0x5750C0  
+anim_C8                   u16          indices    0xFC       0x5750D8  
+anim_C8                   s16          values     0x670      0x5751D4  
+anim_C9                   Animation               0x14       0x575844  
+anim_C9                   u16          indices    0xFC       0x57585C  
+anim_C9                   s16          values     0x794      0x575958  
+anim_CA                   Animation               0x14       0x5760EC  
+anim_CA                   u16          indices    0xFC       0x576104  
+anim_CA                   s16          values     0x7CE      0x576200  
+anim_CB                   Animation               0x14       0x5769D0  
+anim_CC                   Animation               0x14       0x5769E8  
+anim_CB_CC                u16          indices    0xFC       0x576A00  
+anim_CB_CC                s16          values     0x566      0x576AFC  
+anim_CD                   Animation               0x14       0x577064  
+anim_CD                   u16          indices    0xFC       0x57707C  
+anim_CD                   s16          values     0x1440     0x577178  
+anim_CE                   Animation               0x14       0x5785B8  
+anim_CE                   u16          indices    0xFC       0x5785D0  
+anim_CE                   s16          values     0x5B4      0x5786CC  
+anim_CF                   Animation               0x14       0x578C80  
+anim_CF                   u16          indices    0xFC       0x578C98  
+anim_CF                   s16          values     0xA94      0x578D94  
+anim_D0                   Animation               0x14       0x579828  
+anim_D0                   u16          indices    0xFC       0x579840  
+anim_D0                   s16          values     0x2DA      0x57993C  
