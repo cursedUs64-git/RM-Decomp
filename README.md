@@ -1,3 +1,9 @@
+# Rom Manager Decomp
+
+This is a decompilation of a Rom Manager Base ROM and its differences from a normal `sm64extend` ROM made with arguments `-f -a 16`.
+
+NOTE: This is currently a WIP project.
+
 # SM64 Injection Template
 
 SM64 Injection Template by AmitabhTechz, Xerox and CalebV64.
