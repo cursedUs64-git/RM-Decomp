@@ -2,7 +2,9 @@
 
 This is a decompilation of a Rom Manager Base ROM and its differences from a normal `sm64extend` ROM made with arguments `-f -a 16`.
 
-NOTE: This is currently a WIP project.
+NOTE: The C files are provided for documentation. They might not perfectly match.
+
+WARNING: Do not try compiling anything here on its own, it's a W.I.P. project as of now.
 
 # SM64 Injection Template
 
