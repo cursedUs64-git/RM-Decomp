@@ -39,4 +39,3 @@ void rm_load_raw_hook(void) {
 
     sCurrentCmd = (struct LevelCommand *)((u8 *)sCurrentCmd + CMD_GET(u8, 1));
 }
-

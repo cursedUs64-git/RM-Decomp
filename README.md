@@ -1,3 +1,9 @@
+# NOTE: This Project is abandoned
+
+A new repo will be made, focusing on reverting back the changes of Rom Manager with the work from this repo, no documentation.
+
+You can, however, fork this project and continue it.
+
 # Rom Manager Decomp
 
 This is a decompilation of a Rom Manager Base ROM and its differences from a normal `sm64extend` ROM made with arguments `-f -a 16`.
